@@ -4,7 +4,8 @@ fish-pepper:
     - base
     - version
     - type
-  name: "fabric8/java"
+    - arch
+  name: "project31/java"
   build: "1.6.1"
 
 # Used for escaping in 'agent-bond-opts' where the same delimiters are used
@@ -24,7 +25,7 @@ config:
         7: 7.201.2.6.16-r0
         8: 8.201.08-r1
     centos:
-      from: "centos:7.6.1810"
+      from: centos:7.6.1810
       createUser: true
       user: "jboss"
       version: "7"
@@ -33,13 +34,6 @@ config:
         7: 1.7.0.201-2.6.16.1.el7_6
         8: 1.8.0.201.b09-2.el7_6
         11: 11.0.2.7-0.el7_6
-    jboss:
-      deprecated: true
-      from: "jboss/base-jdk"
-      user: "jboss"
-      # Use the major version
-      tagFromMajorVersion: true
-      description: "JBoss with OpenJDK"
   version:
     openjdk7:
       version: "1.7.0"
@@ -68,3 +62,9 @@ config:
            - [ "jboss" ]
     jdk:
       description: "Java Development Kit (JDK)"
+
+  arch:
+    amd64:
+      dockerOrg: "p31amd64"
+    arm64v8:
+      dockerOrg: "p31arm64v8"

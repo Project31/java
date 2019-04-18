@@ -1,4 +1,5 @@
-FROM {{= fp.config.base.from + (fp.config.base.tagFromMajorVersion ? ":" + fp.config.version.major : "") }}
+FROM {{= fp.config.arch.dockerOrg + "/" + fp.config.base.from + (fp.config.base.tagFromMajorVersion ? ":" + fp.config.version.major : "") }}
+{{= fp.block("qemu-lib-" + fp.param.arch,'commands',{'fp-bin-files' : true}) || ''}}
 
 USER root
 
