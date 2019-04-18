@@ -6,7 +6,7 @@ fish-pepper:
     - type
     - arch
   name: "project31/java"
-  build: "1.6.1"
+  build: "1.6.2"
 
 # Used for escaping in 'agent-bond-opts' where the same delimiters are used
 abSepOpen: "{{"
@@ -22,7 +22,6 @@ config:
       version: "3.9"
       description: "Alpine"
       javaPackage:
-        7: 7.201.2.6.16-r0
         8: 8.201.08-r1
     centos:
       from: centos:7.6.1810
@@ -35,10 +34,6 @@ config:
         8: 1.8.0.201.b09-2.el7_6
         11: 11.0.2.7-0.el7_6
   version:
-    openjdk7:
-      version: "1.7.0"
-      description: "OpenJDK 7"
-      major: 7
     openjdk8:
       version: "1.8.0"
       description: "OpenJDK 8"

@@ -1,40 +1,24 @@
-docker manifest create project31/java-alpine-openjdk7-jdk:1.6.1 p31amd64/java-alpine-openjdk7-jdk-amd64:1.6.1 p31arm64v8/java-alpine-openjdk7-jdk-arm64v8:1.6.1
-docker manifest annotate project31/java-alpine-openjdk7-jdk:1.6.1 p31arm64v8/java-alpine-openjdk7-jdk-arm64v8:1.6.1 --os linux --arch arm64 --variant armv8
-docker manifest push project31/java-alpine-openjdk7-jdk:1.6.1
+docker manifest create project31/java-alpine-openjdk8-jdk:1.6.2 p31amd64/java-alpine-openjdk8-jdk-amd64:1.6.2 p31arm64v8/java-alpine-openjdk8-jdk-arm64v8:1.6.2
+docker manifest annotate project31/java-alpine-openjdk8-jdk:1.6.2 p31arm64v8/java-alpine-openjdk8-jdk-arm64v8:1.6.2 --os linux --arch arm64 --variant armv8
+docker manifest push project31/java-alpine-openjdk8-jdk:1.6.2
 
-docker manifest create project31/java-alpine-openjdk8-jdk:1.6.1 p31amd64/java-alpine-openjdk8-jdk-amd64:1.6.1 p31arm64v8/java-alpine-openjdk8-jdk-arm64v8:1.6.1
-docker manifest annotate project31/java-alpine-openjdk8-jdk:1.6.1 p31arm64v8/java-alpine-openjdk8-jdk-arm64v8:1.6.1 --os linux --arch arm64 --variant armv8
-docker manifest push project31/java-alpine-openjdk8-jdk:1.6.1
+docker manifest create project31/java-centos-openjdk11-jdk:1.6.2 p31amd64/java-centos-openjdk11-jdk-amd64:1.6.2 p31arm64v8/java-centos-openjdk11-jdk-arm64v8:1.6.2
+docker manifest annotate project31/java-centos-openjdk11-jdk:1.6.2 p31arm64v8/java-centos-openjdk11-jdk-arm64v8:1.6.2 --os linux --arch arm64 --variant armv8
+docker manifest push project31/java-centos-openjdk11-jdk:1.6.2
 
-docker manifest create project31/java-alpine-openjdk8-jre:1.6.1 p31amd64/java-alpine-openjdk8-jre-amd64:1.6.1 p31arm64v8/java-alpine-openjdk8-jre-arm64v8:1.6.1
-docker manifest annotate project31/java-alpine-openjdk8-jre:1.6.1 p31arm64v8/java-alpine-openjdk8-jre-arm64v8:1.6.1 --os linux --arch arm64 --variant armv8
-docker manifest push project31/java-alpine-openjdk8-jre:1.6.1
+docker manifest create project31/java-alpine-openjdk8-jre:1.6.2 p31amd64/java-alpine-openjdk8-jre-amd64:1.6.2 p31arm64v8/java-alpine-openjdk8-jre-arm64v8:1.6.2
+docker manifest annotate project31/java-alpine-openjdk8-jre:1.6.2 p31arm64v8/java-alpine-openjdk8-jre-arm64v8:1.6.2 --os linux --arch arm64 --variant armv8
+docker manifest push project31/java-alpine-openjdk8-jre:1.6.2
 
-docker manifest create project31/java-centos-openjdk11-jdk:1.6.1 p31amd64/java-centos-openjdk11-jdk-amd64:1.6.1 p31arm64v8/java-centos-openjdk11-jdk-arm64v8:1.6.1
-docker manifest annotate project31/java-centos-openjdk11-jdk:1.6.1 p31arm64v8/java-centos-openjdk11-jdk-arm64v8:1.6.1 --os linux --arch arm64 --variant armv8
-docker manifest push project31/java-centos-openjdk11-jdk:1.6.1
+docker manifest create project31/java-centos-openjdk8-jdk:1.6.2 p31amd64/java-centos-openjdk8-jdk-amd64:1.6.2 p31arm64v8/java-centos-openjdk8-jdk-arm64v8:1.6.2
+docker manifest annotate project31/java-centos-openjdk8-jdk:1.6.2 p31arm64v8/java-centos-openjdk8-jdk-arm64v8:1.6.2 --os linux --arch arm64 --variant armv8
+docker manifest push project31/java-centos-openjdk8-jdk:1.6.2
 
-docker manifest create project31/java-alpine-openjdk7-jre:1.6.1 p31amd64/java-alpine-openjdk7-jre-amd64:1.6.1 p31arm64v8/java-alpine-openjdk7-jre-arm64v8:1.6.1
-docker manifest annotate project31/java-alpine-openjdk7-jre:1.6.1 p31arm64v8/java-alpine-openjdk7-jre-arm64v8:1.6.1 --os linux --arch arm64 --variant armv8
-docker manifest push project31/java-alpine-openjdk7-jre:1.6.1
+docker manifest create project31/java-centos-openjdk11-jre:1.6.2 p31amd64/java-centos-openjdk11-jre-amd64:1.6.2 p31arm64v8/java-centos-openjdk11-jre-arm64v8:1.6.2
+docker manifest annotate project31/java-centos-openjdk11-jre:1.6.2 p31arm64v8/java-centos-openjdk11-jre-arm64v8:1.6.2 --os linux --arch arm64 --variant armv8
+docker manifest push project31/java-centos-openjdk11-jre:1.6.2
 
-docker manifest create project31/java-centos-openjdk11-jre:1.6.1 p31amd64/java-centos-openjdk11-jre-amd64:1.6.1 p31arm64v8/java-centos-openjdk11-jre-arm64v8:1.6.1
-docker manifest annotate project31/java-centos-openjdk11-jre:1.6.1 p31arm64v8/java-centos-openjdk11-jre-arm64v8:1.6.1 --os linux --arch arm64 --variant armv8
-docker manifest push project31/java-centos-openjdk11-jre:1.6.1
-
-docker manifest create project31/java-centos-openjdk7-jdk:1.6.1 p31amd64/java-centos-openjdk7-jdk-amd64:1.6.1 p31arm64v8/java-centos-openjdk7-jdk-arm64v8:1.6.1
-docker manifest annotate project31/java-centos-openjdk7-jdk:1.6.1 p31arm64v8/java-centos-openjdk7-jdk-arm64v8:1.6.1 --os linux --arch arm64 --variant armv8
-docker manifest push project31/java-centos-openjdk7-jdk:1.6.1
-
-docker manifest create project31/java-centos-openjdk7-jre:1.6.1 p31amd64/java-centos-openjdk7-jre-amd64:1.6.1 p31arm64v8/java-centos-openjdk7-jre-arm64v8:1.6.1
-docker manifest annotate project31/java-centos-openjdk7-jre:1.6.1 p31arm64v8/java-centos-openjdk7-jre-arm64v8:1.6.1 --os linux --arch arm64 --variant armv8
-docker manifest push project31/java-centos-openjdk7-jre:1.6.1
-
-docker manifest create project31/java-centos-openjdk8-jdk:1.6.1 p31amd64/java-centos-openjdk8-jdk-amd64:1.6.1 p31arm64v8/java-centos-openjdk8-jdk-arm64v8:1.6.1
-docker manifest annotate project31/java-centos-openjdk8-jdk:1.6.1 p31arm64v8/java-centos-openjdk8-jdk-arm64v8:1.6.1 --os linux --arch arm64 --variant armv8
-docker manifest push project31/java-centos-openjdk8-jdk:1.6.1
-
-docker manifest create project31/java-centos-openjdk8-jre:1.6.1 p31amd64/java-centos-openjdk8-jre-amd64:1.6.1 p31arm64v8/java-centos-openjdk8-jre-arm64v8:1.6.1
-docker manifest annotate project31/java-centos-openjdk8-jre:1.6.1 p31arm64v8/java-centos-openjdk8-jre-arm64v8:1.6.1 --os linux --arch arm64 --variant armv8
-docker manifest push project31/java-centos-openjdk8-jre:1.6.1
+docker manifest create project31/java-centos-openjdk8-jre:1.6.2 p31amd64/java-centos-openjdk8-jre-amd64:1.6.2 p31arm64v8/java-centos-openjdk8-jre-arm64v8:1.6.2
+docker manifest annotate project31/java-centos-openjdk8-jre:1.6.2 p31arm64v8/java-centos-openjdk8-jre-arm64v8:1.6.2 --os linux --arch arm64 --variant armv8
+docker manifest push project31/java-centos-openjdk8-jre:1.6.2
 
